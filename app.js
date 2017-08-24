@@ -28,8 +28,8 @@ app.use('/', index);
 
 // 未匹配到的路由
 app.use(function(req, res, next) {
-	res.send('你来到了错误的页面');
-	// res.redirect("/");
+	// res.send('你来到了错误的页面');
+	res.redirect("/");
 });
 
 module.exports = app;
